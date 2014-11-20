@@ -17,8 +17,6 @@ public class MainActivity extends FragmentActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         ScanFragment scanFragment = new ScanFragment();
         fragmentTransaction.add(R.id.fragment_container, scanFragment);
-//        fragmentTransaction.replace(R.id.fragment_container, scanFragment);
-//        fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
 
@@ -31,9 +29,7 @@ public class MainActivity extends FragmentActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
         return id == R.id.action_settings || super.onOptionsItemSelected(item);
     }
+
 }

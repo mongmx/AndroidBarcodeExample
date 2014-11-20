@@ -1,6 +1,5 @@
 package com.mongmx.androidbarcodeexample;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -14,10 +13,6 @@ import android.widget.Toast;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class ScanFragment extends Fragment {
 
     private String toast;
@@ -65,11 +60,9 @@ public class ScanFragment extends Fragment {
         if(result != null) {
             if(result.getContents() == null) {
                 toast = "Cancelled";
-            } else if (result.getContents().equals("5709031465291")){
-                etSerialNo.setText(result.getContents());
-                toast = "Customer found";
             } else {
-                toast = "Customer not found";
+                etSerialNo.setText(result.getContents());
+                toast = "Scan successful";
             }
             displayToast();
         }
