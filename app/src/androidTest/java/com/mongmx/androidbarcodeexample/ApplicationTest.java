@@ -1,4 +1,4 @@
-package com.mongmx.testbarcode2;
+package com.mongmx.androidbarcodeexample;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

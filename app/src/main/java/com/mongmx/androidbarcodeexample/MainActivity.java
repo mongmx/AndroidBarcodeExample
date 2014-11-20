@@ -1,4 +1,4 @@
-package com.mongmx.testbarcode2;
+package com.mongmx.androidbarcodeexample;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
