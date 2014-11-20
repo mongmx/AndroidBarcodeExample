@@ -13,11 +13,9 @@ public class MainActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        ScanFragment scanFragment = new ScanFragment();
-        fragmentTransaction.add(R.id.fragment_container, scanFragment);
-        fragmentTransaction.commit();
+
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.add(R.id.fragment_container, new ScanFragment()).commit();
     }
 
     @Override
